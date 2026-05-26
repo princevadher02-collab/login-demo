@@ -1,5 +1,4 @@
 let userScore = 0;
-//hello
 let compScore = 0;
 let showMsg = document.querySelector("#msg");
 let userSmsg = document.querySelector("#you");

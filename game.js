@@ -50,7 +50,7 @@ const score = () => {};
 
 const shoWin = (userwin,compchoice,userchoice) => {
   if (userwin) {
-    showMsg.innerText = `you Win.your${userchoice} beat ${compchoice}`;
+    showMsg.innerText = `you Win.your ${userchoice} beat ${compchoice}`;
     showMsg.style.backgroundColor = "green";
     userScore++;
     userSmsg.innerText = userScore;

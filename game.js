@@ -41,21 +41,21 @@ const playgame = (userchoice) => {
       //rock,paper
       userwin = compchoice === "rock" ? false : true;
     }
-    shoWin(userwin,compchoice,userchoice);
+    shoWin(userwin);
 
   }
 };
 
 const score = () => {};
 
-const shoWin = (userwin,compchoice,userchoice) => {
+const shoWin = (userwin) => {
   if (userwin) {
-    showMsg.innerText = `you Win.your ${userchoice} beat ${compchoice}`;
+    showMsg.innerText = `you Win.`;
     showMsg.style.backgroundColor = "green";
     userScore++;
     userSmsg.innerText = userScore;
   } else {
-    showMsg.innerText = ` you lose.${compchoice} beat your ${userchoise}` ;
+    showMsg.innerText = ` you lose.` ;
     showMsg.style.backgroundColor = "red";
     compScore++;
     compSmsg.innerText = compScore;

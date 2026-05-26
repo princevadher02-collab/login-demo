@@ -49,12 +49,12 @@ const score = () => {};
 
 const shoWin = (userwin) => {
   if (userwin) {
-    showMsg.innerText = " you Win. ";
+    showMsg.innerText = `you Win. your ${userchoice} beat ${compchoice}`;
     showMsg.style.backgroundColor = "green";
     userScore++;
     userSmsg.innerText = userScore;
   } else {
-    showMsg.innerText = " you lose. ";
+    showMsg.innerText = ` you lose. ${comchoice} beat your {userchoice}` ;
     showMsg.style.backgroundColor = "red";
     compScore++;
     compSmsg.innerText = compScore;

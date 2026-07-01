@@ -46,16 +46,17 @@ const playgame = (userchoice) => {
   }
 };
 
-const score = () => {};
 
-const shoWin = (userwin) => {
+
+const shoWin = (userwin,userchoice,compchoice) => {
   if (userwin) {
-    showMsg.innerText = `you Win.`;
+    showMsg.innerText = `you Win.your ${userchoice} beat ${compchoice}`;
     showMsg.style.backgroundColor = "green";
     userScore++;
     userSmsg.innerText = userScore;
+    console.log(compchoice);
   } else {
-    showMsg.innerText = ` you lose.` ;
+    showMsg.innerText = ` you lose. ${compchoice} beat your ${userchoice}` ;
     showMsg.style.backgroundColor = "red";
     compScore++;
     compSmsg.innerText = compScore;

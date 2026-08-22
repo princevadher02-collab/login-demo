@@ -41,7 +41,7 @@ const playgame = (userchoice) => {
       //rock,paper
       userwin = compchoice === "rock" ? false : true;
     }
-    shoWin(userwin);
+    shoWin(userwin,userchoice,compchoice);
 
   }
 };
